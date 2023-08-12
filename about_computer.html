@@ -1,0 +1,178 @@
+<!--This is the about page for computer_view-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTHOR</title>
+    <style>
+        body
+        {
+            overflow: hidden;
+        }
+        #back_b
+            {
+                position: relative;
+                top: -220px;
+            }
+        .b_class
+            {
+                border: 2px solid rgb(201, 159, 21);
+                border-radius: 1rem;
+                color: rgba(51, 201, 14, 0.995);
+            }
+        .b
+        {
+            height: 45px;
+            width: 180px;
+             position: relative;
+             top: -180px;
+             right: -685px;
+        }
+        *
+        {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .me
+        { 
+            width: 177px;
+            height: 236px;
+            border-radius: 50em;
+            border-top: 3.2px solid skyblue;
+            border-bottom: 3.2px solid lightcoral;
+            border-left: 3.2px solid rgb(255, 183, 0);
+            border-right: 3.2px solid rgb(211, 124, 227);
+            position: relative;
+            top: 200px;
+            right: -121px;
+        }
+        .bio
+        {
+            font-weight: bolder;
+            position: relative;
+            top: 150px;
+            left: -11px;
+            width: 0px;
+            font-size: 22px;
+            opacity: 1;
+            color:#fff700 ;
+            text-align: center;
+        }
+        .bio1
+        {
+            font-weight: bolder;
+            position: relative;
+            top: -336px;
+            left: 700px;
+            width: 0px;
+            font-size: 22px;
+            opacity: 1;
+            color: rgb(255, 0, 157);
+            text-align: center;
+        }
+        .bio span
+        {
+            color: rgb(136, 255, 0);
+            font-size: 25px;
+            background-color: #dd4b39;
+        }
+        .bio1 span
+        {
+            color: rgb(4, 0, 255);
+            font-size: 25px;
+            background-color: #39dda171;
+        }
+        a
+        {
+            position: relative;
+            top: -900px;
+            left: 1280px;
+            bottom: -10px;
+        }
+        .fa-facebook 
+        {
+            background: #3B5998;
+            color: white;
+            padding: 7.5px;
+    font-size: 33px;
+    text-align: center;
+    border-radius: 1em;
+    width: 35px;
+        }
+        .fa-google 
+        {
+            background: #dd4b39;
+            color: white;
+            padding: 7.5px;
+    font-size: 33px;
+    text-align: center;
+    border-radius: 1em;
+    width: 35px;
+        }
+        .fa-linkedin 
+        {
+            background: #007bb5;
+            color: white;
+            padding: 7.5px;
+    font-size: 33px;
+    text-align: center;
+    border-radius: 1em;
+    width: 35px;
+        }
+        .fa-whatsapp
+        {
+            background: #00b509;
+            color: white;
+            padding: 7.5px;
+    font-size: 33px;
+    text-align: center;
+    border-radius: 1em;
+    width: 35px;
+        }
+    </style>
+</head>
+<body background="background_img.jpg">
+    <img src="about_pic.png" class="b"></img>
+    <img src="soumik_pic.jpg" class="me"></img>
+    <div id="back_b">
+        <button onclick="back_bt()"><h2 class="b_class">&#171;Back </h2></button>
+    </div>
+    <pre class="bio">
+                        Hi... I am <span>SOUMIK DAS</span>.
+        This is my first project which is Created and
+         Designed by Me.
+         This Project is built by <span>HTML - CSS - JAVASCRIPT</span>.
+    </pre>
+    <pre class="bio1">
+        <span>ABOUT Project :-</span>
+        This is device comfortable Calculator.
+        which means you can open it from Mobile for Mobile view 
+        and Open it from Computer for Computer view. 
+        In this , the customized view is handled by 
+        separate JAVASCRIPT files.
+        
+        <span>ABOUT ME :-</span> 
+        Now I am pursuing <span>B.Tech </span>in
+        <span>Computer Science Engineering(CSE)</span> 3rd year from 
+        <span>Heritage Institute of Technology.</span> 
+        [2022-2025].
+        Also I have completed Diploma in 
+        <span>Computer Science Technology (CST)</span> from 
+        <span> Nalhati Government Polytechnic.</span> 
+        [2019-2022].
+    </pre>
+    <a href="mailto:soumikdas065@gmail.com" class="fa fa-google"></a>
+    <a href="https://www.facebook.com/soumik.das.3705157?mibextid=ZbWKwL" class="fa fa-facebook"></a>
+    <a href="https://wa.me/9749269719" class="fa fa-whatsapp"></a>
+    <a href="https://linkedin.com/in/soumik-das-65a938240" class="fa fa-linkedin"></a>
+</body>
+<script>
+    function back_bt()
+    {
+        window.location.href='index.html';
+    }
+</script>
+</html>

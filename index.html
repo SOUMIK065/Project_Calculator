@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="calculator_style.css">
+</head>
+<body>
+    <p id="p1"></p>
+    <P id="p2"></P>
+
+    <div id="img"  class="cal_img">
+        <img class="img" src="cal.png"></img> 
+        <h1 class="font-effect-outline" id="h333">CALCULATOR</h1>   
+    </div>
+
+    <button id="opt1" class="opt" onclick="opt_b()"> 
+        <div id="ot1" class="opt1"></div>
+        <div id="ot2" class="opt2"></div>
+        <div id="ot3" class="opt3"></div>
+    </button>
+
+    <div id="slide_id" class="slide_c">
+        <button id="dl" class="dl1" onclick="show()">&times;</button>
+        <br>
+        <button id="sc" class="sd1" onclick="sc_cal()">Scintific Calculator</button> 
+        <br>
+        <button id="cc" class="sd2" onclick="sl_cal()">Simple Calculator</button> 
+        <br>
+        <button id="dm" class="sd3" onclick="dk_mode()">&#127769; DarkMode</button>
+        <br>
+        <button id="lm" class="sd4" onclick="lt_mode()">&#128261; LightMode</button>
+        <br>
+        <button id="lc" class="sd5" onclick="lth()">&#128207; Length</button>
+        <br>
+       <button id="tc" class="sd6" onclick="temp()">Temprature &#8451;</button>
+       <br>
+        <button id="pf" class="sd7" onclick="prf()">&#129333; About</button>
+    </div>
+
+    <div id="additional_b" class="a">
+        <button class="nit_c" id="nit" onclick="nit_mode()"><h5 class="moon">&#127769;</h5></button>
+        <button class="day_c" id="day" onclick="day_mode()"><h5 class="sun">&#128261;</h5></button>
+        <button class="mb1" id="mb_i" onclick="more_button()">&ctdot;</button>
+        <button class="sb" id="sc_cal" onclick="scin_calculator()">
+            <p class="sb1">&sum;</p>
+            <p class="sb2">&plus;</p>
+            <p class="sb3">&infin;</p>
+            <p class="sb4">&equals;</p>
+        </button>
+        <button class="sm" id="sm_cal" onclick="simp_calculator()">
+            <p class="sm1">&plus;</p>
+            <p class="sm2">&minus;</p>
+            <p class="sm3">&times;</p>
+            <p class="sm4">&divide;</p>
+        </button>
+    </div>
+        
+    <div class="dropmenu_c" id="dropmenu_i">
+        <button id="dropmenu_1" onclick="history_b()" class="history"><img src="history.png"><P>HISTORY</P></button>
+        <button id="dropmenu_2" onclick="profile_b()" class="profile"><img src="profile.png"><P>ABOUT</P></button>
+    </div>
+
+    <div class="position">
+         <div id="calculator1" class="calculator"> 
+            <textarea id="history1" class="blank" type="text" placeholder="                   history" readonly></textarea>
+            <button  id="history_btn" class="h1_b" onclick="clear_hist()">History Clear</button>
+            <input class="num" id="input1" type="text" readonly>
+            <input class="num2" id="input2" type="text2" readonly>
+        </div>
+    
+        <div id="button_id" class="button_c">
+
+            <button id="b31" class="button" onclick="sin('sin')"><h1 class="h1" id="h31">sin</h1></button>
+
+            <button id="b32" class="button" onclick="cos('cos')"><h1 class="h1" id="h32">cos</h1></button>
+
+            <button id="b33" class="button" onclick="tan('tan')"><h1 class="h1" id="h33">tan</h1></button>
+
+            <button id="b26" class="button" onclick="num_b('(')"><h1 class="h1" id="h26">(</h1></button>
+            
+            <button id="b27" class="button" onclick="num_b(')')"><h1 class="h1" id="h27">)</h1></button>
+
+            <button id="b25" class="button" onclick="log('log')"><h1 class="h1" id="h25">log</h1></button>
+
+           
+            <button id="b21" class="button" onclick="num_b('^')"><h1 class="h1" id="h21">x<sup>y</sup></h1></button>
+
+            <button id="b3" class="button" onclick="ac_b()"><h1 class="h" id="h3">AC</h1></button>
+
+            <button id="b2" class="button" onclick="c_b()"><h1 class="h" id="h2">C</h1></button>
+
+            <button id="b1" class="button" onclick="num_b('%')"><h1 class="h" id="h1">%</h1></button>
+        
+            <button id="b4" class="button" onclick="num_b('/')"><h1 class="h" id="h4">/</h1></button>
+
+            <button id="b34" class="button" onclick="pi('&pi;')"><h1 class="h1" id="h34">&pi;</h1></button>
+
+
+            <button id="b22" class="button" onclick="x_pow_2()"><h1 class="h1" id="h22">x<sup>2</sup></h1></button>
+
+            <button id="b5" class="button" onclick="num_b(9)"><h1 class="h" id="h5">9</h1> </button>
+        
+            <button id="b6" class="button" onclick="num_b(8)"><h1 class="h" id="h6">8</h1></button>
+    
+            <button id="b7" class="button" onclick="num_b(7)"><h1 class="h" id="h7">7</h1></button>
+    
+            <button id="b8" class="button" onclick="num_b('*')"><h1 class="h" id="h8">*</h1></button>
+
+            <button id="b28" class="button" onclick="x_inv('1/')"><h2 class="h1" id="h28">1/x</sup></h1></button>
+
+        
+
+            <button id="b23" class="button" onclick="root_x('&#8730;')"><h1 class="h1" id="h23">&#8730;x</sup></h1></button>
+
+            <button id="b9" class="button" onclick="num_b(6)"><h1 class="h" id="h9">6</h1></button>
+        
+            <button id="b10" class="button" onclick="num_b(5)"><h1 class="h" id="h10">5</h1></button>
+
+            <button id="b11" class="button" onclick="num_b(4)"><h1 class="h" id="h11">4</h1></button>
+    
+            <button id="b12" class="button" onclick="num_b('-')"><h1 class="h" id="h12">-</h1></button>
+
+            <button id="b37" class="button" onclick="ten_pow_x()"><h1 class="h1" id="h37">10<sup>x</sup></h1></button>
+
+
+
+            <button id="b24" class="button" onclick="ctb_root_x('&#8731;')"><h1 class="h1" id="h24">&#8731;x</sup></h1></button>
+
+            <button id="b13" class="button" onclick="num_b(3)"><h1 class="h" id="h13">3</h1></button>
+        
+            <button id="b14" class="button" onclick="num_b(2)"><h1 class="h" id="h14">2</h1></button>
+    
+            <button id="b15" class="button" onclick="num_b(1)"><h1 class="h" id="h15">1</h1></button>
+            
+            <button id="b16" class="button" onclick="num_b('+')"><h1 class="h" id="h16">+</h1></button>
+
+            <button id="b38" class="button" onclick="two_pow_x()"><h1 class="h1" id="h38">2<sup>x</sup></h1></button>
+
+            
+            <button id="b29" class="button" onclick="x_fact()"><h1 class="h1" id="h29">x!</sup></h1></button>
+
+            <button id="b17" class="button" onclick="num_b('00')"><h1 class="h" id="h17">00</h1></button>
+        
+            <button id="b18" class="button" onclick="num_b(0)"><h1 class="h" id="h18">0</h1></button>
+        
+            <button id="b19" class="button" onclick="num_b('.')"><h1 class="h" id="h19">.</h1></button>
+        
+            <button id="b20" class="button" onclick="eql_b()"><h1 class="h" id="h20">=</h1></button>
+
+            <button id="b35" class="button" onclick="ln('ln')"><h1 class="h1" id="h35">ln</h1></button>
+                
+        </div>
+
+        <div id="button_mob" class="button_m">
+
+            <button id="bt31" class="button1" onclick="sin('sin')"><h1 class="ht1" id="ht31">sin</h1></button>
+
+            <button id="bt32" class="button1" onclick="cos('cos')"><h1 class="ht1" id="ht32">cos</h1></button>
+
+            <button id="bt33" class="button1" onclick="tan('tan')"><h1 class="ht1" id="ht33">tan</h1></button>
+
+            <button id="bt34" class="button1" onclick="pi('&pi;')"><h1 class="ht1" id="ht34">&pi;</h1></button>
+
+            <button id="bt35" class="button1" onclick="ln('ln')"><h1 class="ht1" id="ht35">ln</h1></button>
+
+
+            <button id="bt36" class="button1" onclick="two_pow_x()"><h1 class="ht1" id="ht36">2<sup id="x2">x</sup></h1></button>
+
+            <button id="bt37" class="button1" onclick="ten_pow_x()"><h1 class="ht1" id="ht37">10<sup id="10x">x</sup></h1></button>
+
+            <button id="bt26" class="button1" onclick="num_b('(')"><h1 class="ht1" id="ht26">(</h1></button>
+
+            <button id="bt27" class="button1" onclick="num_b(')')"><h1 class="ht1" id="ht27">)</h1></button>
+
+            <button id="bt25" class="button1" onclick="log('log')"><h1 class="ht1" id="ht25">log</h1></button>
+
+
+            <button id="bt21" class="button1" onclick="num_b('^')"><h1 class="ht1" id="ht21">x<sup id="xy">y</sup></h1></button>
+
+            <button id="bt3" class="button1" onclick="ac_b()"><h1 class="ht" id="ht3">AC</h1></button>
+    
+            <button id="bt2" class="button1" onclick="c_b()"><h1 class="ht" id="ht2">C</h1></button>
+
+            <button id="bt1" class="button1" onclick="num_b('%')"><h1 class="ht" id="ht1">%</h1></button>
+    
+            <button id="bt4" class="button1" onclick="num_b('/')"><h1 class="ht" id="ht4">/</h1></button>
+
+
+            <button id="bt22" class="button1" onclick="x_pow_2()"><h1 class="ht1" id="ht22">x<sup id="2x">2</sup></h1></button>
+
+            <button id="bt5" class="button1" onclick="num_b(9)"><h1 class="ht" id="ht5">9</h1></button>
+    
+            <button id="bt6" class="button1" onclick="num_b(8)"><h1 class="ht" id="ht6">8</h1></button>
+    
+            <button id="bt7" class="button1" onclick="num_b(7)"><h1 class="ht" id="ht7">7</h1></button>
+    
+            <button id="bt8" class="button1" onclick="num_b('*')"><h1 class="ht" id="ht8">*</h1></button>
+
+            
+            <button id="bt23" class="button1" onclick="root_x('&#8730;')"><h1 class="ht1" id="ht23">&#8730;x</h1></button>
+
+            <button id="bt9" class="button1" onclick="num_b(6)"><h1 class="ht" id="ht9">6</h1></button>
+    
+            <button id="bt10" class="button1" onclick="num_b(5)"><h1 class="ht" id="ht10">5</h1></button>
+
+            <button id="bt11" class="button1" onclick="num_b(4)"><h1 class="ht" id="ht11">4</h1></button>
+    
+            <button id="bt12" class="button1" onclick="num_b('-')"><h1 class="ht" id="ht12">-</h1></button>
+
+
+            <button id="bt24" class="button1" onclick="ctb_root_x('&#8731;')"><h1 class="ht1" id="ht24">&#8731;x</h1></button>
+
+            <button id="bt13" class="button1" onclick="num_b(3)"><h1 class="ht" id="ht13">3</h1></button>
+    
+            <button id="bt14" class="button1" onclick="num_b(2)"><h1 class="ht" id="ht14">2</h1></button>
+    
+            <button id="bt15" class="button1" onclick="num_b(1)"><h1 class="ht" id="ht15">1</h1></button>
+
+            <button id="bt16" class="button1" onclick="num_b('+')"><h1 class="ht" id="ht16">+</h1></button>
+
+    
+            <button id="bt29" class="button1" onclick="x_fact()"><h1 class="ht1" id="ht29">x!</h1></button>
+
+            <button id="bt17" class="button1" onclick="num_b('00')"><h1 class="ht" id="ht17">00</h1></button>
+    
+            <button id="bt18" class="button1" onclick="num_b(0)"><h1 class="ht" id="ht18">0</h1></button>
+    
+            <button id="bt19" class="button1" onclick="num_b('.')"><h1 class="ht" id="ht19">.</h1></button>
+    
+            <button id="bt20" class="button1" onclick="eql_b()"><h1 class="ht" id="ht20">=</h1></button>
+    </div>
+    </div>
+    <div id="h_id">
+        <textarea id="h_id1" class="h_c" type="text" placeholder="history" readonly></textarea>
+    </div>
+    <div id="mob_clr_c">
+        <button  id="mob_clr" onclick="mobclear_hist()">History Clear</button>
+        <button  id="close" onclick="close_mob()">Close</button>
+    </div>
+    
+<script src="calculate_function.js"></script>
+<script src="mobile_view.js"></script>
+<script src="computer_view.js"></script>
+</body>
+</html>
+
+    
+        
+       
+
+
+        
+        
+        
+        
+

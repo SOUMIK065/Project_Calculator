@@ -1,0 +1,77 @@
+<!--length html page for computer_view-->
+<!DOCTYPE html>
+<head>
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="length_temp.css">
+</head>
+    <p id="p1"></p>
+    <P id="p2"></P>
+    
+    
+    <div id="img"  class="cal_img">
+        <img class="img" src="cal.png"></img>    
+        <h3 id="h333" class="p"> LENGTH</h3>
+    </div>
+
+<div id="parent">
+    <div class="all">
+        <div id="back_b">
+            <button onclick="back_bt()"><h2 class="b_class">&#171;Back </h2></button>
+        </div>
+        <select id="length1_id" onclick="val1(value)">
+            <option>none</option>
+        <optgroup label="Metric unit"></optgroup>
+            <option value="1">kilometer (Km)</option>
+            <option value="2">Meter (m)</option>
+            <option value="3">Centimeter (cm)</option>
+            <option value="4">Nanometer (nm)</option>
+            <option value="5">Milimeter (mm)</option>
+        <optgroup label="Imperial unit"></optgroup>    
+            <option value="6">Inch (in)</option>
+            <option value="7">Foot (ft)</option>
+            <option value="8">Mile (mi)</option>
+        </select>
+        <br>
+        <input class="num" id="input1" type="text" placeholder="0" readonly>
+        <br>
+        <select id="length2_id" onclick="val2(value)">
+            <option>none</option>
+        <optgroup label="Metric unit"></optgroup>
+            <option value="1">kilometer (Km)</option>
+            <option value="2">Meter (m)</option>
+            <option value="3">Centimeter (cm)</option>
+            <option value="4">kilometer (Km)</option>
+            <option value="5">Milimeter (mm)</option>
+        <optgroup label="Imperial unit"></optgroup>    
+            <option value="6">Inch (in)</option>
+            <option value="7">Foot (ft)</option>
+            <option value="8">Mile (mi)</option>
+        </select>
+        <br>
+        <input class="num2" id="input2" type="text2" readonly>
+    </div>
+    
+    <div id="button_id" class="all">
+        <button id="b3" class="button" onclick="ac_b()"><h1 class="h" id="h3">AC</h1></button>
+        <button id="b2" class="button" onclick="c_b()"><h1 class="h" id="h2">C</h1></button>
+        <br>
+        <button id="b5" class="button" onclick="num_b(9)"><h1 class="h" id="h5">9</h1> </button>
+        <button id="b6" class="button" onclick="num_b(8)"><h1 class="h" id="h6">8</h1></button>
+        <button id="b7" class="button" onclick="num_b(7)"><h1 class="h" id="h7">7</h1></button>
+        <br>
+        <button id="b9" class="button" onclick="num_b(6)"><h1 class="h" id="h9">6</h1></button>
+        <button id="b10" class="button" onclick="num_b(5)"><h1 class="h" id="h10">5</h1></button>
+        <button id="b11" class="button" onclick="num_b(4)"><h1 class="h" id="h11">4</h1></button>
+        <br>
+        <button id="b13" class="button" onclick="num_b(3)"><h1 class="h" id="h13">3</h1></button>
+        <button id="b14" class="button" onclick="num_b(2)"><h1 class="h" id="h14">2</h1></button>
+        <button id="b15" class="button" onclick="num_b(1)"><h1 class="h" id="h15">1</h1></button>
+        <br>
+        <button id="b17" class="button" onclick="num_b('00')"><h1 class="h" id="h17">00</h1></button>
+        <button id="b18" class="button" onclick="num_b(0)"><h1 class="h" id="h18">0</h1></button>
+        <br><br><br><br><br><br><br>
+    </div>
+</div>
+<script src="length.js"></script>
+</body>
+</html>

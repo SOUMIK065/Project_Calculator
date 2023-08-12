@@ -1,0 +1,205 @@
+/*In is the length and temprature style function are written*/
+*
+{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--background);
+    overflow: hidden;
+}
+:root
+{
+    --background: rgb(240, 248, 255);
+}
+
+.cal_img
+{
+    display: grid;
+    grid-template-columns: 35px;
+}
+.img
+{
+    padding-left: 10px;
+    height: 25px;
+    width: 25px;
+}
+.p
+{
+    background-image: linear-gradient(10deg,rgba(255, 0, 0, 0.563), rgba(128, 128, 128, 0.355), pink);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+    grid-column-start: 2;
+    grid-column-end: auto;
+    font-size: 25px;
+}
+#button_id
+{
+    width: 1040.017px;
+}
+.button
+{
+    height: 50px;
+    background-color: rgb(240, 248, 255);
+    height: 100px;
+    width: 160px;
+    position: relative;
+    border-top: 0.5px solid rgba(238, 130, 238, 0.43);
+    border-left: 0.5px solid rgba(238, 130, 238, 0.577);
+    border-bottom: 0.5px solid rgba(0, 0, 255, 0.43);
+    border-right: 0.5px solid rgba(0, 0, 255, 0.43);
+    border-radius: 2.7em;
+    cursor: pointer;
+}
+.h
+{
+    border-radius: 1em;
+    color: black;
+    width: 40px;
+    font-family: "Lucida Console","Courier New",monospace;
+    padding-left: 20px;
+}
+
+#b2
+{
+    left: 700px;
+    top: 50px;
+}
+#b3
+{
+    left: 690px;
+    top: 50px;
+}
+#b5
+{
+    left: 510px;
+    top: 60px;
+}
+#b6
+{
+    left: 530px;
+    top: 60px;
+}
+#b7
+{
+    left: 540px;
+    top: 60px;
+}
+#b9
+{
+    left: 510px;
+    top: 70px;
+
+}
+#b10
+{
+    left: 530px;
+    top: 70px;
+}
+#b11
+{
+    left: 540px;
+    top: 70px;
+}
+#b13
+{
+    left: 510px;
+    top: 80px;
+}
+#b14
+{
+    left: 530px;
+    top: 80px;
+}
+#b15
+{
+    left: 540px;
+    top: 80px;
+}
+#b18
+{
+    left: 700px;
+    top: 90px;
+}
+#b17
+{
+    left: 690px;
+    top: 90px;
+}
+#length2_id,#length1_id
+{
+    padding-left: 20px;
+    font-size: 30px;
+    border: 2px solid blue;
+    border-radius: 1rem;
+}
+.num,.num2
+{
+    font-size: 40px;
+    width: 420px;
+}
+.all
+{
+    display: inline-block;
+    width: 473.017px;
+    height:  600.6px;
+}
+#length1_id
+{
+    position: relative;
+    padding: 10px;
+    top: 110px;
+    left: 20px;
+    cursor: pointer;
+    color: darkorchid;
+    background-color: powderblue;
+}
+#length1_id option ,#length2_id option
+{
+    background-color: bisque;
+}
+#length1_id optgroup ,#length2_id optgroup
+{
+    background-color: rgb(247, 189, 118);
+}
+.num
+{
+    position: relative;
+    top: 150px;
+    padding: 10px;
+    left: 20px;
+    border: 2px solid rgb(50, 140, 142);
+    border-radius: 1rem;
+}
+#length2_id
+{
+    position: relative;
+    top: 200px;
+    padding: 10px;
+    left: 20px;
+    cursor: pointer;
+    color: darkorchid;
+    background-color: powderblue;
+}
+.num2
+{
+    position: relative;
+    top: 250px;
+    padding: 10px;
+    left: 20px;
+    border: 2px solid rgb(50, 140, 142);
+    border-radius: 1rem;
+}
+#back_b
+{
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}
+.b_class
+{
+    border: 2px solid rgb(201, 159, 21);
+    border-radius: 1rem;
+    color: rgba(51, 201, 14, 0.995);
+    cursor: pointer;
+}
