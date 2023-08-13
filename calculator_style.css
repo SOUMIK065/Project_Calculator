@@ -5,7 +5,7 @@
     margin: 0px;
     background-color: var(--background);
     overflow: hidden;
-    touch-action: none;
+    touch-action: manipulation;
 }
 :root
 {
