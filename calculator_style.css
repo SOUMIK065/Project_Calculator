@@ -4,7 +4,7 @@
     padding: 0px;
     margin: 0px;
     background-color: var(--background);
-    overflow: hidden;
+    overflow-x: hidden;
     touch-action: manipulation;
 }
 :root
@@ -82,7 +82,7 @@ body
     display: grid;
     grid-template-columns: repeat(11,auto);
     grid-template-rows: repeat(5,auto);
-    padding-top: 60px;
+    padding-top: 6.0vh;
     padding-right: 5px;
     padding-left: 2px;
 }
@@ -95,16 +95,18 @@ body
     grid-column-end: 10;
     resize: none;
     position: relative;
-    left: 90px;
+    left: 7vw;
+    width: 35vw;
+    left: 2vw;
 }
 
 .h1_b
 {
-    width: 100px;
-    height: 130px;
+    width: 7vw;
+    height: 20vh;
     position: relative;
-    top: 10px;
-    right: -50px;
+    top: 1.0vh;
+    right: 1vw;
     grid-row-start: 1;
     grid-row-end: 5;
     grid-column-start: 11;
@@ -123,9 +125,10 @@ body
     grid-column-start: 1;
     grid-column-end: 6;
     text-align: right;
-    padding-right: 20px;
+    padding-right: 2.0vw;
     position: relative;
-    left: 40px;
+    left: 3.0vw;
+    width: 48vw;
 }
 .num2
 {
@@ -136,9 +139,10 @@ body
     text-align: right;
     font-family: "Lucida Console",Courier,monospace;
     color: rgba(12, 6, 0, 0.547);
-    padding-right: 20px;
+    padding-right: 2.0vw;
     position: relative;
-    left: 40px;
+    left: 3.0vw;
+    width: 48vw;
 }
 
 .position
@@ -167,8 +171,7 @@ body
 
 .button
 {
-    padding-left: 55px;
-    height: 50px;
+    padding-left: 5.5vw;
     background-color: rgb(240, 248, 255);
     box-shadow: 8px 8px 10px 0px rgba(202, 237, 206, 0.94);
     transition: 2s;
@@ -189,15 +192,14 @@ body
 {
     border-radius: 1em;
     color: black;
-    width: 40px;
+    width: 4.0vw;
     font-family: "Lucida Console","Courier New",monospace;
-    padding-left: 20px;
 }
 .h1
 {
     border-radius: 1em;
     color: black;
-    width: 40px;
+    width: 4.0vw;
     font-family: "Lucida Console","Courier New",monospace;
 }
 
@@ -206,22 +208,9 @@ body
     background-color: rgba(247, 242, 242, 0.863);
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 5000px)
+@media only screen and (min-width: 1000px) and (max-width: 5000px)
 {
-    .blank
-    {
-        border: 2px solid rgba(255, 192, 203, 0.91);
-    }
-    .num
-    {
-        border: 0.5px solid rgba(0, 0, 255, 0.229);
-        border-radius: 10em;
-    }
-    .num2
-    {
-        border: 0.5px solid rgba(238, 130, 238, 0.495);
-        border-radius: 10em;
-    }
+    
     .button:hover
     {
         background-color: rgba(230, 171, 171, 0.751);
@@ -238,15 +227,16 @@ body
     }
     .h
     {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-right: 15px;
+        padding-top: 1vh;
+        padding-bottom: 0.5vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
     }
     .h1
     {
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 10px;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        padding-top: 1vh;
         padding-bottom: 5px;
     }
 }
@@ -400,9 +390,9 @@ body
 {
     z-index: 100;
     position: fixed;
-    height: 95%;
+    height: 93%;
     background-color: rgba(234, 234, 255, 0.734);
-    width: 300px;
+    width: 19.7vw;
     border: 2px solid white;
     border-top-right-radius: 1.3rem;
     border-bottom-right-radius: 1rem;
@@ -412,7 +402,7 @@ body
 .dl1
 {
     position: relative;
-    left: 261px;
+    left: 16.2vw;
     top: 0.4px;
     font-size: 25px;
     color: black;
@@ -436,7 +426,7 @@ body
     border-radius: 1em;
     border: 2px solid blue;
     background-color: white;
-    width: 298px;
+    width: 19.5vw;
     padding-top: 10px;
     padding-bottom: 10px;
     cursor: pointer;
@@ -447,7 +437,7 @@ body
     border-radius: 1em;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 298px;
+    width: 19.5vw;
     font-size: 20px;
     border: 2px solid rgb(168, 25, 221);
     cursor: pointer;
@@ -458,7 +448,7 @@ body
     border-radius: 1em;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 298px;
+    width: 19.5vw;
     font-size: 20px;
     border: 2px solid blue;
     cursor: pointer;
@@ -469,7 +459,7 @@ body
     border-radius: 1em;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 298px;
+    width: 19.5vw;
     font-size: 20px;
     border: 2px solid rgb(168, 25, 221);
     cursor: pointer;
@@ -480,7 +470,7 @@ body
     border-radius: 1em;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 298px;
+    width: 19.5vw;
     font-size: 20px;
     border: 2px solid blue;
     cursor: pointer;
@@ -491,7 +481,7 @@ body
     border-radius: 1em;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 298px;
+    width: 19.5vw;
     font-size: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -501,9 +491,9 @@ body
 .sd7
 {
     position: absolute;
-    width: 298px;
-    padding-bottom: 10px;
-    bottom: 10px;
+    width: 19.5vw;
+    padding-bottom: 1vh;
+    bottom: 0;
     background-color: bisque;
     border:  2px solid rgba(134, 20, 175, 0.09);
     font-size: 20px;
@@ -597,22 +587,4 @@ body
     font-family: "Audiowide", sans-serif;
     background-color: rgb(255, 186, 47);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
