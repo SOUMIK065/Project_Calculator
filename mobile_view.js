@@ -17,8 +17,8 @@ if(width1<=500)
         document.getElementById("button_mob").style.paddingBottom="65px";
     }
 
-    document.getElementById("input1").style.left="-10px";
-    document.getElementById("input2").style.left="-10px";
+    document.getElementById("input1").style.left="48vw";
+    document.getElementById("input2").style.left="48vw";
     document.getElementById("history_btn").style.display="none";
     document.getElementById("button_id").style.display="none";
     document.getElementById("additional_b").style.paddingLeft="750px"
